@@ -1,0 +1,73 @@
+aws kafka describe-cluster --region eu-west-2 --cluster-arn "arn:aws:kafka:eu-west-2:813537867103:cluster/AWSKafkaTutorialCluster/b2d083fb-1446-42e1-a7b6-dd1f39bf0783-3"
+
+
+
+MSK Cluster url 
+
+{
+  "secretArnList": [
+    "string"
+  ]
+}
+
+{
+
+  "BrokerNodeGroupInfo": {
+
+    "BrokerAZDistribution": "DEFAULT",
+
+    "InstanceType": "kafka.m5.large",
+
+    "ClientSubnets": [
+
+      "subnet-02698c69c8236b10c",
+
+      "subnet-0561c16df26a9cf80",
+
+      "subnet-0c08cd8d05facdf4b"
+
+    ],
+
+    "SecurityGroups": [
+
+      "sg-0d97091e564b45f5d"
+
+    ]
+
+  },
+
+  "ClusterName": "AWSKafkaTutorialCluster",
+
+  "EncryptionInfo": {
+
+    "EncryptionAtRest": {
+
+      "DataVolumeKMSKeyId": "92365406-3811-4c17-8c02-f863b7813796"
+
+    },
+
+    "EncryptionInTransit": {
+
+      "InCluster": true,
+
+      "ClientBroker": "PLAINTEXT"
+
+    }
+
+  },
+
+  "EnhancedMonitoring": "PER_TOPIC_PER_BROKER",
+
+  "KafkaVersion": "2.2.1",
+
+ "clientAuthentication": {
+    "sasl": {
+      "scram": {
+        "enabled": true
+      }
+    }
+	},  
+
+  "NumberOfBrokerNodes": 3
+
+}
